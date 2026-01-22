@@ -260,6 +260,17 @@
     .pcb-chatbot-icon {
       font-size: 24px;
       color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pcb-chatbot-icon img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
     }
 
     .pcb-chatbot-badge {
@@ -789,15 +800,12 @@
 <!-- PCB System Chatbot Minimized -->
   <div id="pcbChatbot" class="pcb-chatbot" onclick="openPopup()">
     <div class="pcb-chatbot-icon">
-      <i class="fas fa-robot"></i>
+      <img src="LogoComputec.png" alt="Gaming Day">
     </div>
     <div class="pcb-chatbot-badge">
       <span>Próximamente</span>
     </div>
     <div class="pcb-chatbot-pulse"></div>
-    <div class="pcb-chatbot-logo">
-      <img src="LogoComputec.png" alt="Computec">
-    </div>
   </div>
 
 <script>
