@@ -249,7 +249,7 @@
     }
 
     .pcb-popup-powered img {
-      height: 20px;
+      height: 40px;
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     }
 
@@ -274,6 +274,12 @@
       object-fit: contain;
     }
 
+    .gamepad-icon {
+      width: 45px;
+      height: 45px;
+      color: white;
+    }
+
     .pcb-chatbot-badge {
       position: absolute;
       top: -10px;
@@ -284,6 +290,7 @@
       padding: 2px 8px;
       font-size: 10px;
       font-weight: bold;
+      z-index: 1000;
     }
 
     .pcb-chatbot-pulse {
@@ -344,8 +351,10 @@
     .blink {
       animation: blink 1s infinite;
     }
+
+
   </style>
-  
+
 </head>
 <body class="bg-gray-900 text-gray-100 antialiased">
   <header class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600">
@@ -803,7 +812,9 @@
 <!-- PCB System Chatbot Minimized -->
   <div id="pcbChatbot" class="pcb-chatbot" onclick="openPopup()">
     <div class="pcb-chatbot-icon">
-      <img src="LogoComputec.png" alt="Gaming Day">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="gamepad-icon">
+        <path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 248c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40zm-24 56c0 22.1-17.9 40-40 40s-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/>
+      </svg>
     </div>
     <div class="pcb-chatbot-badge">
       <span>Próximamente</span>
