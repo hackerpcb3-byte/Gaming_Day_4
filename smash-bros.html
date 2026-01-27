@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Impostor - Gaming Day</title>
-  <meta name="description" content="Información sobre Impostor en Gaming Day." />
+  <title>Smash Bros - Gaming Day</title>
+  <meta name="description" content="Información sobre Super Smash Bros en Gaming Day." />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .glow { text-shadow: 0 2px 12px rgba(99,102,241,0.25); }
@@ -21,86 +21,19 @@
 
     /* Mobile Optimizations */
     @media (max-width: 768px) {
-      /* Ajustar header en móvil */
-      header .max-w-6xl {
-        padding: 1rem !important;
-      }
-
-      header h1 {
-        font-size: 1.25rem !important;
-      }
-
-      header p {
-        font-size: 0.75rem !important;
-      }
-
-      header img {
-        width: 2.5rem !important;
-        height: 2.5rem !important;
-      }
-
-      /* Ajustar main en móvil */
-      main {
-        padding: 1.5rem 1rem !important;
-      }
-
-      main section {
-        padding: 1.5rem !important;
-      }
-
-      /* Ajustar títulos en móvil */
-      h2 {
-        font-size: 1.5rem !important;
-      }
-
-      h3 {
-        font-size: 1.125rem !important;
-      }
-
-      /* Ajustar badge NUEVO */
-      .bg-gradient-to-r.from-pink-600 {
-        font-size: 0.75rem !important;
-        padding: 0.25rem 0.75rem !important;
-      }
-
-      /* Ajustar grid en móvil */
-      .grid.md\\:grid-cols-2 {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem !important;
-      }
-
-      /* Botones más grandes para touch */
-      a.bg-indigo-600, a.bg-white\/10 {
-        min-height: 44px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.75rem 1.5rem !important;
-        cursor: pointer;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-        touch-action: manipulation;
-      }
-
-      /* Asegurar que los enlaces de registro funcionen en móvil */
-      a[href*="forms.office.com"] {
-        pointer-events: auto !important;
-        cursor: pointer !important;
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3) !important;
-        touch-action: manipulation !important;
-      }
-
-      /* Ajustar navegación entre juegos */
-      .flex.justify-between {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: stretch !important;
-      }
-
-      .flex.gap-3 {
-        width: 100%;
-        gap: 0.5rem !important;
-      }
-
+      header .max-w-6xl { padding: 1rem !important; }
+      header h1 { font-size: 1.25rem !important; }
+      header p { font-size: 0.75rem !important; }
+      header img { width: 2.5rem !important; height: 2.5rem !important; }
+      main { padding: 1.5rem 1rem !important; }
+      main section { padding: 1.5rem !important; }
+      h2 { font-size: 1.5rem !important; }
+      h3 { font-size: 1.125rem !important; }
+      .grid.md\\:grid-cols-2 { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+      a.bg-indigo-600, a.bg-white\/10 { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem !important; cursor: pointer; -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); touch-action: manipulation; }
+      a[href*="forms.office.com"] { pointer-events: auto !important; cursor: pointer !important; -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3) !important; touch-action: manipulation !important; }
+      .flex.justify-between { flex-direction: column; gap: 1rem; align-items: stretch !important; }
+      .flex.gap-3 { width: 100%; gap: 0.5rem !important; }
       .flex.gap-3 a.bg-white\/10 {
         flex: 1;
         font-size: 0.7rem !important;
@@ -109,39 +42,22 @@
         min-width: 0;
         gap: 0.25rem !important;
       }
-
       .flex.gap-3 a span {
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 0.7rem !important;
       }
-
       .flex.gap-3 a svg {
         flex-shrink: 0;
         width: 1rem !important;
         height: 1rem !important;
       }
-
-      /* Ajustar footer */
-      footer .grid {
-        gap: 2rem !important;
-      }
-
-      footer h4 {
-        font-size: 1rem !important;
-      }
-
-      footer .h-16 {
-        height: 3rem !important;
-        width: 3rem !important;
-      }
+      footer .grid { gap: 2rem !important; }
+      footer h4 { font-size: 1rem !important; }
+      footer .h-16 { height: 3rem !important; width: 3rem !important; }
     }
-
-    /* Mejoras para tablets */
     @media (min-width: 769px) and (max-width: 1024px) {
-      .max-w-6xl {
-        max-width: 90%;
-      }
+      .max-w-6xl { max-width: 90%; }
     }
   </style>
 </head>
@@ -174,29 +90,26 @@
 
   <main class="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-12">
     <section class="bg-white/5 rounded-xl p-4 md:p-8">
-      <div class="flex items-center gap-3 mb-4">
-        <h2 class="text-3xl font-extrabold glow">Impostor</h2>
-        <span class="bg-gradient-to-r from-pink-600 to-purple-600 text-white text-sm px-3 py-1 rounded-full font-bold">NUEVO</span>
-      </div>
-      <p class="mt-4 text-lg text-gray-300">¡Descubre quién es el impostor! Un juego de deducción social y estrategia donde la confianza es clave.</p>
+      <h2 class="text-3xl font-extrabold glow">Super Smash Bros</h2>
+      <p class="mt-4 text-lg text-gray-300">Batallas épicas con personajes icónicos de Nintendo y más.</p>
 
       <div class="mt-6 grid md:grid-cols-2 gap-8">
         <div>
           <h3 class="text-xl font-bold">Información del Juego</h3>
           <ul class="mt-4 space-y-2 text-gray-200">
-            <li><strong>Género:</strong> Deducción Social / Party Game</li>
-            <li><strong>Plataforma:</strong> Móvil</li>
-            <li><strong>Modo de Juego:</strong> Multijugador Local </li>
-            
+            <li><strong>Desarrollador:</strong> Nintendo</li>
+            <li><strong>Género:</strong> Lucha de plataformas</li>
+            <li><strong>Plataforma:</strong> Nintendo Switch</li>
+            <li><strong>Modo de Juego:</strong> Multijugador local</li>
           </ul>
         </div>
         <div>
           <h3 class="text-xl font-bold">Detalles del Torneo</h3>
           <ul class="mt-4 space-y-2 text-gray-200">
-            <li><strong>Capacidad de Jugadores:</strong> 8-10 por partida</li>
-           
-            <li><strong>Duración:</strong> 8-10 minutos por ronda</li>
-            <li><strong>Equipos:</strong> Individual (roles asignados aleatoriamente)</li>
+            <li><strong>Capacidad de Jugadores:</strong> 2-8 por consola</li>
+            <li><strong>Modalidad:</strong> Pelea libre o eliminación</li>
+            <li><strong>Duración:</strong> 3-7 minutos por pelea</li>
+            <li><strong>Equipos:</strong> Individual o equipos</li>
           </ul>
         </div>
       </div>
@@ -204,10 +117,10 @@
       <div class="mt-8">
         <h3 class="text-xl font-bold">Reglas Específicas</h3>
         <ul class="mt-4 space-y-2 text-gray-200">
-          <li>• Cada jugador recibe un rol secreto: Civiles, 1 a 2 impostores.</li>
-          <li>• Todos formulan respuestas sobre una palabra secreta que solo el impostor desconoce.</li>
-          <li>• Tras varias rondas, los jugadores votan quién creen que es el impostor.</li>
-          <li>• Ganan los civiles si lo descubren; gana el impostor si pasa desapercibido.</li>
+          <li>• Gana el último jugador o equipo que quede con vida</li>
+          <li>• Si el tiempo se agota, gana quien tenga más vidas; en caso de empate, gana quien tenga menos porcentaje de daño.</li>
+          <li>• Todos los personajes están permitidos, sin restricciones.</li>
+          <li>• Prohibido pausar el juego durante la pelea.</li>
         </ul>
       </div>
 
@@ -224,11 +137,17 @@
           <span>Volver a Juegos</span>
         </a>
         <div class="flex gap-3">
-          <a href="smash-bros.html" class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-md hover:bg-white/20 transition-colors">
+          <a href="mortal-kombat.html" class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-md hover:bg-white/20 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
             </svg>
             <span>Anterior</span>
+          </a>
+          <a href="impostor.html" class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-md hover:bg-white/20 transition-colors">
+            <span>Siguiente</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
           </a>
         </div>
       </div>

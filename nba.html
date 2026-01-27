@@ -9,6 +9,16 @@
   <style>
     .glow { text-shadow: 0 2px 12px rgba(99,102,241,0.25); }
 
+    /* Smooth page transitions */
+    body {
+      animation: fadeIn 0.3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     /* Mobile Optimizations */
     @media (max-width: 768px) {
       header .max-w-6xl { padding: 1rem !important; }
